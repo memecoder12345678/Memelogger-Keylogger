@@ -2,26 +2,28 @@
 MemeLoger là một công cụ cho phép bạn tạo keylogger cho hệ điều hành Windows.
 
 Các tính năng của MemeLogger bao gồm: 
-- Keylogger từ xa qua Gmail
-- Keylogger từ xa qua Discord
-- Keylogger cục bộ
+  - **Keylogger từ xa qua Gmail**: Gửi dữ liệu bàn phím đến Gmail của bạn
+  - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua webhook Discord
+  - **Keylogger cục bộ**: Lưu trữ dữ liệu bàn phím trực tiếp trên thiết bị
+
 
 ## Cài đặt
-Bạn có thể cài đặt bằng cách clone kho lưu trữ này bằng cách sử dụng git:
+### Bạn có thể cài đặt bằng cách:
+#### 1. Clone kho lưu trữ này bằng cách sử dụng git:
 ```bash
 git clone https://github.com/memecoder12345678/memelogger.git
 ```
-Sau đó cài đặt thư viện dùng lệnh:
+#### 2. Sau đó cài đặt thư viện dùng lệnh:
 ```bash
 pip install -r requirements.txt
 ```
-Để khởi chạy công cụ, chạy lệnh:
+#### 3. Để khởi chạy công cụ, chạy lệnh:
 ```
 python build.py
 ```
-Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
+#### 4. Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
 
-Nếu không có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
+**Lưu ý**: Nếu không có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
 
 ## Lưu ý quan trọng
 **Nếu bạn sử dụng Keylogger từ xa qua Gmail**:
