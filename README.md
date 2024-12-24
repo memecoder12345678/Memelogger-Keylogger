@@ -21,7 +21,7 @@ python build.py
 ```
 Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
 
-Nếu ko có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads), [Git](https://git-scm.com/downloads)
+Nếu ko có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
 
 ## Lưu ý quan trọng
 **Nếu bạn sử dụng Keylogger từ xa qua Gmail**:
