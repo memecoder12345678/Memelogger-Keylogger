@@ -40,6 +40,7 @@ def build():
     except subprocess.CalledProcessError:
         print(f"{Fore.LIGHTRED_EX}Failed to build {os.path.abspath(python_file)}")
         input("Press enter to exit...")
+        exit(1)
     print(f"\n{Fore.GREEN}Build completed successfully.{Fore.RESET}")
     print(f"{Fore.GREEN}Output directory: {os.path.abspath(output_dir)}{Fore.RESET}")
     input("Press enter to exit...")
