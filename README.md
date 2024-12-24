@@ -9,21 +9,21 @@ Các tính năng của MemeLogger bao gồm:
 
 ## Cài đặt
 ### Bạn có thể cài đặt bằng cách:
-#### 1. Clone kho lưu trữ này bằng cách sử dụng git:
+  1. Clone kho lưu trữ này bằng cách sử dụng git:
 ```bash
 git clone https://github.com/memecoder12345678/memelogger.git
 ```
-#### 2. Sau đó cài đặt thư viện dùng lệnh:
+  2. Sau đó cài đặt thư viện dùng lệnh:
 ```bash
 pip install -r requirements.txt
 ```
-#### 3. Để khởi chạy công cụ, chạy lệnh:
+  3. Để khởi chạy công cụ, chạy lệnh:
 ```
 python build.py
 ```
-#### 4. Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
+  4. Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
 
-**Lưu ý**: Nếu không có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
+  **Lưu ý**: Nếu không có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
 
 ## Lưu ý quan trọng
 **Nếu bạn sử dụng Keylogger từ xa qua Gmail**:
