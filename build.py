@@ -24,7 +24,7 @@ def build():
                 "--uac-admin",
                 "-n",
                 "Memelogger",
-                f"--icon={os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon","excel.ico")}",
+                f"--icon={os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon","icon.ico")}",
                 "--distpath",
                 output_dir,
                 "--workpath",
