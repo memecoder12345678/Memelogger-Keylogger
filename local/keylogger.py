@@ -14,6 +14,7 @@ current_window = None
 special_keys = {
     Key.alt_l: "",
     Key.alt_r: "",
+    Key.alt_gr: "",
     Key.backspace: " [Backspace] ",
     Key.caps_lock: "",
     Key.cmd_l: " [Windows Key] ",
