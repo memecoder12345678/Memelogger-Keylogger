@@ -36,4 +36,5 @@ Các tính năng của **MemeLogger** bao gồm:
 
 ## Cảnh báo miễn trừ trách nhiệm
 
-Tôi sẽ **không chịu bất kì một trách nhiệm pháp lý** nào nếu bạn **lạm dụng công cụ này để theo dõi, đánh cắp thông tin cá nhân, mật khẩu,... của người khác**, vì điều này là **bất hợp pháp**.
+  - Tôi sẽ **không chịu bất kì một trách nhiệm pháp lý** nào nếu bạn **lạm dụng công cụ này để theo dõi, đánh cắp thông tin cá nhân, mật khẩu,... của người khác**, vì điều này là **bất hợp pháp**.
+  - **Làm gì thì làm, đừng để mấy đồng chí áo xanh gõ cửa nhà bạn nhé 💀💀💀**
