@@ -1,40 +1,49 @@
 # MemeLogger
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat&logo=book)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue?logo=windows&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat)
 
 **MemeLogger** là một công cụ cho phép bạn tạo keylogger cho hệ điều hành Windows.
 
-Các tính năng của **MemeLogger** bao gồm: 
+## Tính năng
 
-  - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua webhook Discord
+  - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua webhook Discord.
+  - **Keylogger cục bộ**: Lưu trữ dữ liệu bàn phím trực tiếp trên thiết bị.
 
-  - **Keylogger cục bộ**: Lưu trữ dữ liệu bàn phím trực tiếp trên thiết bị
+## Yêu cầu
+  
+  - Python 3.8 trở lên.
+  - Hệ điều hành Windows 10 trở lên.
+  - Kết nối Internet trên máy mục tiêu (nếu sử dụng chế độ Discord Webhook).
 
-## Cài đặt
+## Cài đặt & sử dụng
 
-- ### Bạn có thể cài đặt bằng cách:
-
-  + Clone kho lưu trữ này bằng cách sử dụng git:
-
-    ```bash
-    git clone https://github.com/memecoder12345678/memelogger.git
-    ```
+  ### Cách cài đặt MemeLogger:
     
-  + Sau đó cài đặt thư viện dùng lệnh:
+    1. Clone kho lưu trữ:
+    
+        ```bash
+        git clone https://github.com/memecoder12345678/memelogger.git
+        ```
+    
+    2. Cài đặt thư viện phụ thuộc:
+    
+        ```bash
+        pip install -r requirements.txt
+        ```
+  ### Cách dùng MemeLogger:
+    1. Khởi chạy MemeLogger:
+    
+        ```bash
+        python build.py
+        ```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
-    
-  + Để khởi chạy công cụ, chạy lệnh:
+    2. Sau đó, bạn sẽ được hướng dẫn nhập các tùy chọn để tạo keylogger phù hợp.
 
-    ```
-    python build.py
-    ```
-    
-    Hãy nhập các tùy chọn và công cụ sẽ bắt đầu tạo keylogger.
-    
-  **Lưu ý**: Nếu không có **Python** và **Git**, bạn có thể cài đặt bằng đường dẫn sau: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
+  **Lưu ý**: Nếu bạn chưa cài đặt **Python** và **Git**, hãy cài tại: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
 
 ## Cảnh báo miễn trừ trách nhiệm
-
   - Tôi sẽ **không chịu bất kì một trách nhiệm pháp lý** nào nếu bạn **lạm dụng công cụ này để theo dõi, đánh cắp thông tin cá nhân, mật khẩu,... của người khác**, vì điều này là **bất hợp pháp**.
+  - Sử dụng công cụ với **mục đích học tập hoặc trong môi trường có sự đồng thuận**.
   - **Làm gì thì làm, đừng để mấy đồng chí áo xanh gõ cửa nhà bạn nhé 💀💀💀**
