@@ -4,6 +4,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 import os
+import sys
 import subprocess
 from colorama import init, Fore
 
@@ -13,6 +14,8 @@ output_dir = r".\output"
 
 
 def build():
+    os.system("cls")
+    print(f"{Fore.GREEN}Start building...\n")
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     try:
@@ -41,10 +44,11 @@ def build():
     except subprocess.CalledProcessError:
         print(f"{Fore.LIGHTRED_EX}Failed to build {os.path.abspath(python_file)}")
         input("Press enter to exit...")
-        exit(1)
+        sys.exit(1)
     print(f"\n{Fore.GREEN}Build completed successfully.{Fore.RESET}")
     print(f"{Fore.GREEN}Output directory: {os.path.abspath(output_dir)}{Fore.RESET}")
     input("Press enter to exit...")
+    sys.exit(0)
 
 
 def main():
