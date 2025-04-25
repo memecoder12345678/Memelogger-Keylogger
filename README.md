@@ -1,6 +1,6 @@
-# MemeLoger
+# MemeLogger
 
-**MemeLoger** là một công cụ cho phép bạn tạo keylogger cho hệ điều hành Windows.
+**MemeLogger** là một công cụ cho phép bạn tạo keylogger cho hệ điều hành Windows.
 
 Các tính năng của **MemeLogger** bao gồm: 
 
