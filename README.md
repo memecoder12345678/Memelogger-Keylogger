@@ -10,6 +10,7 @@
 
   - **Keylogger từ xa qua Discord**: Gửi dữ liệu bàn phím thông qua webhook Discord.
   - **Keylogger cục bộ**: Lưu trữ dữ liệu bàn phím trực tiếp trên thiết bị.
+  - **Mã hóa chống AV (cung cấp bởi [0Beef](https://github.com/memecoder12345678/0BeeF-Python-Crypter.git))**: Mã hóa chống AV.
 
 ## Yêu cầu
   
@@ -21,25 +22,25 @@
 
   ### Cách cài đặt MemeLogger:
     
-    1. Clone kho lưu trữ:
+  1. Clone kho lưu trữ:
     
         ```bash
         git clone https://github.com/memecoder12345678/memelogger.git
         ```
     
-    2. Cài đặt thư viện phụ thuộc:
+  2. Cài đặt thư viện phụ thuộc:
     
         ```bash
         pip install -r requirements.txt
         ```
   ### Cách dùng MemeLogger:
-    1. Khởi chạy MemeLogger:
+  1. Khởi chạy MemeLogger:
     
         ```bash
         python build.py
         ```
 
-    2. Sau đó, bạn sẽ được hướng dẫn nhập các tùy chọn để tạo keylogger phù hợp.
+  2. Sau đó, bạn sẽ được hướng dẫn nhập các tùy chọn để tạo keylogger phù hợp.
 
   **Lưu ý**: Nếu bạn chưa cài đặt **Python** và **Git**, hãy cài tại: [Python](https://www.python.org/downloads "Trang cài đặt Python"), [Git](https://git-scm.com/downloads "Trang cài đặt Git")
 
