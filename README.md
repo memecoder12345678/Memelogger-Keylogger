@@ -2,7 +2,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat&logo=book)
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue?logo=windows&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Inactive-red?style=flat)
+![Status](https://img.shields.io/badge/Status-Temporarily%20Inactive-orange?style=flat)
 
 **MemeLogger** là một công cụ cho phép bạn tạo keylogger cho hệ điều hành Windows.
 
