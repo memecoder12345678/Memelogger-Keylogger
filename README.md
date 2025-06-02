@@ -36,7 +36,7 @@
   1. Khởi chạy MemeLogger:
     
         ```bash
-        python build.py
+        python ./src/build.py
         ```
 
   2. Sau đó, bạn sẽ được hướng dẫn nhập các tùy chọn để tạo keylogger phù hợp.
