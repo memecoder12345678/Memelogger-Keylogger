@@ -4,10 +4,7 @@ import os
 import re
 import zlib
 
-from colorama import Fore, init
 from cryptography.fernet import Fernet
-
-init(autoreset=True)
 
 
 def xor_encrypt(data, key):
