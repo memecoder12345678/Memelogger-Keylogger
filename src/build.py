@@ -105,8 +105,8 @@ def main():
             os.system("cls")
             continue
         if choice == 1:
-            url = input("\nEnter Discord your webhook URL: ")
-            while url.strip() == "":
+            url = input("\nEnter your Discord webhook URL: ")
+            if url.strip() == "":
                 print("\nPlease enter your Discord webhook URL!")
                 input("Press enter to continue...")
                 os.system("cls") 
